@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>F3 FASHION - Đăng nhập / Đăng ký</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ffe0ec, #e0f7ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .auth-container {
+      background: white;
+      padding: 30px 25px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      width: 350px;
+      animation: fadeIn 0.5s ease;
+    }
+
+    h2 {
+      text-align: center;
+      color: #ff3399;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #ff3399;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .toggle {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .toggle a {
+      color: #ff3399;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .hint {
+      text-align: center;
+      font-size: 12px;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Đăng nhập -->
+<div class="auth-container" id="login-form">
+  <h2>Đăng nhập</h2>
+  <form onsubmit="handleLogin(event)">
+    <input type="email" id="login-email" placeholder="Email" required />
+    <input type="password" id="login-password" placeholder="Mật khẩu" required />
+    <button type="submit">Đăng nhập</button>
+  </form>
+  <div class="toggle">Chưa có tài khoản? <a onclick="switchForm('register')">Đăng ký</a></div>
+ 
+</div>
+
+<!-- Đăng ký -->
+<div class="auth-container" id="register-form" style="display: none;">
+  <h2>Đăng ký</h2>
+  <form onsubmit="handleRegister(event)">
+    <input type="text" placeholder="Họ và tên" required />
+    <input type="email" placeholder="Email" required />
+    <input type="password" placeholder="Mật khẩu" required />
+    <input type="password" placeholder="Nhập lại mật khẩu" required />
+    <button type="submit">Đăng ký</button>
+  </form>
+  <div class="toggle">Đã có tài khoản? <a onclick="switchForm('login')">Đăng nhập</a></div>
+</div>
+
+<script>
+  function switchForm(type) {
+    document.getElementById('login-form').style.display = type === 'login' ? 'block' : 'none';
+    document.getElementById('register-form').style.display = type === 'register' ? 'block' : 'none';
+  }
+
+  function handleLogin(e) {
+    e.preventDefault();
+    const email = document.getElementById("login-email").value.trim();
+    const password = document.getElementById("login-password").value.trim();
+
+    if (email === "nho@gmail.com" && password === "123") {
+      localStorage.setItem("loggedIn", "true");
+      window.location.href = "shop.html";
+    } else {
+      alert("Sai email hoặc mật khẩu.");
+    }
+  }
+
+  function handleRegister(e) {
+    e.preventDefault();
+    alert("Đăng ký thành công! Mời bạn đăng nhập.");
+    switchForm('login');
+  }
+</script>
+
+</body>
+</html>

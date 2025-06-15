@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>SOEUR STUDIO | Áo gilet Nia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Top Header -->
+<div class="top-header">
+  <div class="left-section">
+    <a href="banhang.html" class="seller-btn">Trở thành người bán</a>
+    <a href="#" id="toggle-category">Danh mục</a>
+
+  </div>
+  <div class="right-section">
+    <a href="#">Việt Nam</a>
+   <a href="index.html"><span>Đăng xuất</span></a>
+  </div>
+</div>
+
+<!-- Danh mục -->
+<div class="category-menu" id="category-menu">
+  <div class="category-row">
+    <a href="ao.html" class="category-item"><img src="image/áo.jpg" alt="Áo"><span>Áo</span></a>
+    <a href="quan.html" class="category-item"><img src="image/quần.jpg" alt="Quần"><span>Quần</span></a>
+    <a href="tui.html" class="category-item"><img src="image/tui.png" alt="Váy/Đầm"><span>Túi Xách</span></a>
+    
+  </div>
+</div>
+
+<!-- Main Header -->
+<header class="main-header">
+  <div class="logo">F3 FASHION</div>
+  <input type="text" placeholder="Tìm kiếm" class="search-box">
+  <div class="icons">
+    <a href="shop.html"><span>🏠</span></a>
+    <span id="chat-icon" style="cursor: pointer;">💬</span>
+    <span id="notify-icon" style="cursor: pointer;">🔔</span>
+    <span id="cart-icon" style="cursor: pointer;">🛒</span>
+
+  </div>
+</header>
+
+<!-- Breadcrumb -->
+<div class="breadcrumb"></div>
+<div class="main-content">
+<!-- Product Detail -->
+<div class="product-container">
+  <div class="left-images">
+    <img src="image/vi4.jpg" onclick="changeMain(this)">
+    <img src="image/xanh1.jpg" onclick="changeMain(this)">
+    <img src="image/xanh2.jpg" onclick="changeMain(this)">
+    <img src="image/xanh3.jpg" onclick="changeMain(this)">
+    <img src="image/xanh4.jpg" onclick="changeMain(this)">
+    <img src="image/xanh5.jpg" onclick="changeMain(this)">
+    
+  </div>
+  <div class="main-image">
+    <img id="mainProductImage" src="image/vi4.jpg">
+  </div>
+  <div class="product-info">
+    <div class="product-tags">
+      <span class="tag voucher">Voucher</span>
+      <span class="tag new">NEW</span>
+      <span class="tag dambao">Đảm bảo</span>
+    </div>
+   <div class="product-name">Ví ngang Chrisbella màu Xanh lá XS EWE009Z0</div>
+    <div class="product-price">880.000đ</div>
+    <div class="options">
+      
+     
+      <label>Số lượng</label>
+      <div class="quantity">
+        <button onclick="decreaseQty()">-</button>
+        <span id="qty">1</span>
+        <button onclick="increaseQty()">+</button>
+        <span style="margin-left:10px;">Kho: 10</span>
+      </div>
+    </div>
+    <div class="action-buttons">
+        <button class="btn-contact" onclick="toggleContact()">📞 Liên hệ</button>
+        <div style="position: relative; display: inline-block;">
+            <button class="btn-cart" onclick="toggleAddToCart()">🛒 Thêm vào giỏ</button>
+            <div class="addcart-popup" id="addcart-popup">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <strong>✅ Đã thêm vào giỏ</strong>
+                  <span onclick="closeAddToCart()" style="cursor: pointer; font-weight: bold;">×</span>
+                </div>
+                <p><strong>Set áo thun tay dài</strong></p>
+                <p>Số lượng: <span id="added-qty">1</span></p>
+              </div>
+              
+          </div>
+          <div style="position: relative; display: inline-block;">
+            <button class="btn-buy" onclick="toggleBuyNow()">Mua Ngay</button>
+            <div class="buynow-popup" id="buynow-popup">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <strong>🛍 Mua thành công</strong>
+                <span onclick="closeBuyNow()" style="cursor: pointer; font-weight: bold;">×</span>
+              </div>
+              <p><strong> Set áo thun tay dài</strong></p>
+              <p>Số lượng: <span id="buy-qty">1</span></p>
+            </div>
+          </div>
+          
+    </div>
+  </div>
+</div>
+
+<!-- Thông tin chi tiết -->
+<div style="padding: 40px; max-width: 900px; margin: 0 auto;">
+  <div style="display: flex; gap: 40px; border-bottom: 1px solid #ccc;">
+    <div style="font-weight: bold; border-bottom: 3px solid black; padding-bottom: 8px;">Thông tin sản phẩm</div>
+  </div>
+  <div style="margin-top: 30px; line-height: 1.8;">
+    <h3>Mô tả sản phẩm:</h3>
+
+Tên sản phẩm: Ví ngang Nữ Chrisbella Nâu đậm XS EWE005Z0Mã Rút Gọn: EWE005Z0Chất liệu: Polyurethane, thiết kế thuộc dòng sản phẩm Classic, được làm từ chất liệu cao cấp, nổi bật với khả năng chống trầy xước và độ bền bỉ vượt trội. Bề mặt ví mềm mại, giữ form hoàn hảo, giúp tôn lên vẻ thanh lịch và sang trọng cho phái đẹp trong mọi tình huống. Ví thường có thiết kế ngang, dễ dàng cất giữ trong túi xách mà không chiếm nhiều diện tích. Đây là phụ kiện không thể thiếu cho những ai yêu thích phong cách tinh tế và chất lượng caoDòng Sản phẩm: Classic.Xuất Xứ: Trung QuốcSize: XS - 10.5*3.5*9CMMàu sắc: Nâu 1Hạn sử dụng và bảo quản,Nơi khô ráo, thoáng mátNhập khẩu và phân phối: Công Ty CP Đầu Tư K&G Việt NamBarcode: 8935270980443
+HƯỚNG DẪN BẢO QUẢN
+1. Giữ khô ráo và chống nấm mốc. Cất giữ ở nơi mát mẻ và thoáng khí.<br>
+2. Nếu giày/túi bị ướt, hãy nhanh chóng lau khô bằng khăn sạch và để chúng khô tự nhiên ở nơi thoáng gió, tránh xa nguồn nhiệt hoặc ánh nắng trực tiếp.<br>
+3. Tránh tiếp xúc với ánh nắng trực tiếp, nguồn nhiệt, va đập mạnh, và dung môi hóa học.<br>
+4. Lớp lót da nhuộm có thể bị phai màu khi tiếp xúc với nước, mồ hôi chân, độ ẩm hoặc ma sát.<br>
+5. Tránh để da nubuck và da lộn bị ướt. Nếu bị ướt, hãy dùng cao su thô để lau và các sản phẩm chăm sóc chuyên dụng. Không sử dụng xi đánh giày.<br>
+6. Các chất liệu như satin và tweed dễ bị kéo sợi không thể khôi phục. Tránh cọ xát với các vật như hạt cườm, đinh tán, chìa khóa và các vật sắc nhọn khác.<br>
+7. Da nhân tạo dạng gương và da dầu sáp cần được làm sạch bằng dung dịch chuyên dụng và nên tránh bị ố bẩn, vì rất khó tẩy sạch sau khi bị nhuộm.<br>
+8. Phần kim loại nên tránh tiếp xúc với các sản phẩm hoặc chất có tính ăn mòn như rượu (nước hoa), axit (giấm) và amoniac (nước lau kính) để giảm nguy cơ ăn mòn lớp mạ.<br>
+
+
+
+
+Hướng dẫn giao hàng:<br>
+Thời gian giao hàng 2-5 ngày<br>
+<b>Màu sắc:</b><br>
+Có 1 màu sắc: Nâu 1<br>
+
+<b>Kích thước:</b><br>
+Có 1 kích thước: XS<br>
+   
+  </div>
+</div>
+ <!-- NEW FOOTER -->
+  <!-- NEW FOOTER -->
+<footer style="background-color: #1c1c1c; color: #eee; padding: 40px 20px; font-size: 14px;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px; max-width: 1200px; margin: auto;">
+
+    <!-- Chăm sóc khách hàng -->
+    <div>
+      <h4 style="color: white; margin-bottom: 10px;">CHĂM SÓC KHÁCH HÀNG</h4>
+      <p><a href="huongdanmuahang.html" style="color: #ccc; text-decoration: none;">Hướng dẫn mua hàng</a></p>
+      <p><a href="#" style="color: #ccc; text-decoration: none;">Hướng dẫn bán hàng</a></p>
+      <p><a href="#" style="color: #ccc; text-decoration: none;">Hướng dẫn đổi trả hàng</a></p>
+    </div>
+
+    <!-- Về BIDU -->
+    <div>
+      <h4 style="color: white; margin-bottom: 10px;">VỀ BIDU</h4>
+      <p><a href="Quychehoatdong.html" style="color: #ccc; text-decoration: none;">Quy chế hoạt động</a></p>
+      <p><a href="#" style="color: #ccc; text-decoration: none;">Chính sách giải quyết khiếu nại</a></p>
+      <p><a href="#" style="color: #ccc; text-decoration: none;">Chính sách bảo mật</a></p>
+    </div>
+
+    <!-- Thanh toán -->
+    <div>
+      <h4 style="color: white; margin-bottom: 10px;">THANH TOÁN</h4>
+      <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+        <img src="image/cash_vi.png" alt="Cash" width="40">
+        <img src="image/onepay.png" alt="OnePay" width="40">
+        <img src="image/vnpay.png" alt="VNPAY" width="40">
+        <img src="image/momo.png" alt="MoMo" width="40">
+      </div>
+    </div>
+
+    <!-- Vận chuyển -->
+    <div>
+      <h4 style="color: white; margin-bottom: 10px;">VẬN CHUYỂN</h4>
+      <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+        <img src="image/icon_ghtk.png" alt="GHN" width="40">
+        <img src="image/icon_ghn.png" alt="GHN" width="40">
+        <img src="image/icon_vietelpost.png" alt="Viettel" width="40">
+        <img src="image/icon.png" alt="GHTK" width="40">
+      </div>
+    </div>
+
+  <!-- Kết nối + App -->
+<div style="text-align: center;">
+  <h4 style="color: white; margin-bottom: 12px; font-size: 15px;">KẾT NỐI VỚI CHÚNG TÔI</h4>
+
+  <p style="margin: 10px 0;">
+    <a href="#" style="display: inline-block; margin: 0 8px;">
+      <a href="https://www.facebook.com/thang.ngoquang.374?locale=vi_VN" target="_blank" style="display: inline-block; margin: 0 8px;">
+  <img src="image/fc.png" alt="Facebook" style="width: 22px; height: 22px;">
+</a>
+    </a>
+     <a href="https://www.instagram.com/nho_0.6/" target="_blank" style="display: inline-block; margin: 0 8px;">
+      <img src="image/ig.png" alt="Instagram" style="width: 22px; height: 22px;">
+    </a>
+  </p>
+
+  <h4 style="color: white; margin: 18px 0 12px; font-size: 15px;">TẢI ỨNG DỤNG TRÊN ĐIỆN THOẠI</h4>
+
+  <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
+    <a href="#">
+      <img src="image/app.png" alt="App Store" style="height: 36px;">
+    </a>
+    <a href="#">
+      <img src="image/gg.png" alt="Google Play" style="height: 36px;">
+    </a>
+  </div>
+</div>
+
+
+</footer>
+<footer style="background-color: #1c1c1c; color: #eee; text-align: center; padding: 40px 20px; font-size: 14px; line-height: 1.8;">
+  <strong>CÔNG TY TNHH F3 FASHION</strong><br>
+  Địa chỉ: Số 12 Lê Duẩn, Quận Hải Châu, Thành phố Đà Nẵng, Việt Nam.<br>
+  Điện thoại: 0236 123 456 - Email: contact@f3fashion.vn<br>
+  Người đại diện pháp luật: Trần Thị Nhi<br>
+  Mã số doanh nghiệp: 0402200011 do Sở KH&ĐT TP Đà Nẵng cấp ngày 15/04/2022<br><br>
+  © 2025 - Bản quyền thuộc về Công ty TNHH F3 FASHION
+</footer>
+
+<!-- MODALS -->
+<!-- Đăng ký -->
+<div class="modal" id="register-modal">
+  <div class="register-wrapper">
+    <div class="register-left">
+      <img src="image/voucher.png" alt="Voucher 155K">
+    </div>
+    <div class="register-form">
+      <span class="close-btn" onclick="closeModal()">×</span>
+      <h2>Đăng ký</h2>
+      <form>
+        <input type="text" placeholder="Họ và tên*" required>
+        <div class="gender-row">
+          <label><input type="radio" name="gender"> Nữ</label>
+          <label><input type="radio" name="gender"> Nam</label>
+          <label><input type="radio" name="gender"> Khác</label>
+        </div>
+        <input type="email" placeholder="Email*" required>
+        <div class="password-field">
+          <input type="password" placeholder="Mật khẩu*" required>
+          <span class="eye-icon">👁️</span>
+        </div>
+        <small>Mật khẩu cần 8 ký tự, 1 chữ in hoa và 1 ký tự đặc biệt.</small>
+        <div class="password-field">
+          <input type="password" placeholder="Nhập lại mật khẩu*" required>
+          <span class="eye-icon">👁️</span>
+        </div>
+        <div class="phone-row">
+          <span class="flag">🇻🇳 +84</span>
+          <input type="text" placeholder="Số điện thoại*" required>
+        </div>
+        <label class="policy">
+          <input type="checkbox" required>
+          Tôi đồng ý với <strong>Điều khoản</strong> & <strong>Chính sách</strong> của F3.
+        </label>
+        <button type="submit">Đăng ký</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Đăng nhập -->
+<div class="modal" id="login-modal">
+  <div class="login-wrapper">
+    <span class="close-btn" onclick="closeModal()">×</span>
+    <h2>Đăng nhập</h2>
+
+    <form class="login-form">
+      <input type="email" placeholder="Email*" required>
+      <input type="password" placeholder="Mật khẩu*" required>
+      <button type="submit">Đăng nhập</button>
+    </form>
+
+    <div class="divider">Hoặc</div>
+
+    <div class="social-login">
+      <button class="google"><img src="image/gg.jpg"> Tiếp tục với Google</button>
+      <button class="facebook"><img src="image/facebook.jpg"> Tiếp tục với Facebook</button>
+      <button class="zalo"><img src="image/zalo1.jpg"> Tiếp tục với Zalo</button>
+    </div>
+
+    <div class="extra-links">
+      <a href="#">Đăng ký</a>
+      <span>|</span>
+      <a href="#">Đăng nhập e-mail</a>
+      <span>|</span>
+      <a href="#">Quên mật khẩu</a>
+    </div>
+  </div>
+</div>
+
+<!-- SCRIPT -->
+<script src="script_ct.js"></script>
+<!-- Hộp chat mini hiện tại góc phải -->
+<div class="chat-popup" id="chat-popup">
+    <div class="chat-header">
+      Chat với F3 FASHION
+      <span class="close-btn" onclick="toggleChat()">×</span>
+    </div>
+    <div class="chat-content">
+      <p>Xin chào 👋 Bạn cần hỗ trợ gì?</p>
+      <textarea id="chat-message" placeholder="Nhập tin nhắn..."></textarea>
+      <button onclick="sendMessage()">Gửi</button>
+    </div>
+  </div>
+  <!-- Hộp thông báo -->
+<div class="notify-popup" id="notify-popup">
+    <div class="notify-header">
+      Thông báo mới
+      <span class="close-btn" onclick="toggleNotify()">×</span>
+    </div>
+    <div class="notify-content">
+      <ul>
+        <li>🎉 Ưu đãi 20% cho đơn đầu tiên!</li>
+        <li>🛍️ Bộ sưu tập hè mới vừa cập bến</li>
+        <li>🚚 Giao hàng miễn phí toàn quốc hôm nay</li>
+      </ul>
+    </div>
+  </div>
+  <!-- Hộp giỏ hàng -->
+<div class="cart-popup" id="cart-popup">
+    <div class="cart-header">
+      Giỏ hàng của bạn
+      <span class="close-btn" onclick="toggleCart()">×</span>
+    </div>
+    <div class="cart-content">
+      <p>🧺 Chưa có sản phẩm nào trong giỏ.</p>
+      <!-- Có thể thêm danh sách sản phẩm tại đây sau -->
+      <button onclick="window.location.href='thanhtoan.html'">Thanh toán</button>
+    </div>
+  </div>
+  <!-- Popup Liên hệ -->
+<div class="contact-popup" id="contact-popup">
+    <div class="contact-header">
+      Thông tin liên hệ
+      <span class="close-btn" onclick="toggleContact()">×</span>
+    </div>
+    <div class="contact-content">
+      <p>📞 Hotline: <strong>0236 123 456</strong></p>
+      <p>✉️ Email: <strong>contact@f3fashion.vn</strong></p>
+    </div>
+  </div>
+  
+</body>
+</html>
